@@ -10,15 +10,12 @@
       <div class="form-inputs">
       <%= t.input :description, label: "And what's it's vibe?" %>
     </div>
+    <div class="form-inputs">
+      <%= t.input :photo, as: :file %>
+    </div>
     <div class="form-action mt-4">
       <%= t.button :submit , class: "btn btn-create" %>
       <%= link_to "Back", root_path, class: "btn btn-flat" %>
     </div>
   <% end %>
 </div>
-
-<%= cl_image_tag("mett2tety4onv4lbdi0x",
-      width: 400, height: 300, crop: :fill) %>
-
-<%= cl_image_tag("oc90wasnbayacppvq962",
-      width: 150, height: 150, crop: :thumb, gravity: :face) %>

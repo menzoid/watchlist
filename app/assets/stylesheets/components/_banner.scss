@@ -1,0 +1,30 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  font-family: "Limelight";
+  margin: 0;
+  color: #F4F1DE;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.banner h2 {
+  margin: 0;
+  color: #F4F1DE;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.banner p {
+  font-size: 20px;
+  color: #F4F1DE;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: 300;
+}

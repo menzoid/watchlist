@@ -1,7 +1,18 @@
-<h2>All Lists</h2>
-
-<% @lists.each do |list|%>
-  <%= link_to list.name, list_path(list) %>
-<% end %>
-
-<%= link_to "Add new list", new_list_path %>
+<div class="banner mb-4" style="background-image: linear-gradient(rgba(100,100,100,0.2),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2luZW1hfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);">
+  <div class="container">
+    <h2>Save all your favourite movies into one place.</h2>
+    <p>A free online movie playlist service.</p>
+  </div>
+</div>
+<div class="container">
+  <div class="cards">
+    <% @lists.each do |list| %>
+      <%= link_to list_path(list) do %>
+      <div class="card-list" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1526007413281-c202e21eedf3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80)">
+          <h5><%= list.name %></h5>
+          <p><%= list.description %></p>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

@@ -1,10 +1,18 @@
-<%= simple_form_for(@list) do |t| %>
-  <div class="form-inputs">
-    <%= t.input :name %>
+<div class="container mt-5">
+  <div class="form-header mb-5">
+  <h4>Create a new <strong>collection</strong></h4>
+  <%# <%= link_to "Back", lists_path, class: "btn btn-flat mt-5" %>
   </div>
-  <div class="form-action">
-    <%= t.button :submit %>
-  </div>
-<% end %>
-
-<%= link_to "Back to lists", lists_path %>
+  <%= simple_form_for(@list) do |t| %>
+    <div class="form-inputs">
+      <%= t.input :name, label: "Watcha gonna call this one?" %>
+    </div>
+      <div class="form-inputs">
+      <%= t.input :description, label: "And what's it's vibe?" %>
+    </div>
+    <div class="form-action mt-4">
+      <%= t.button :submit , class: "btn btn-create" %>
+      <%= link_to "Back", lists_path, class: "btn btn-flat" %>
+    </div>
+  <% end %>
+</div>

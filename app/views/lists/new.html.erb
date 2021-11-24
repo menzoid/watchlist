@@ -11,10 +11,10 @@
       <%= t.input :description, label: "And what's it's vibe?" %>
     </div>
     <div class="form-inputs">
-      <%= t.input :photo, as: :file %>
+      <%= t.input :photo, as: :file, label: "Give that vibe a look.."%>
     </div>
     <div class="form-action mt-4">
-      <%= t.button :submit , class: "btn btn-create" %>
+      <%= t.button :submit , class: "btn btn-create", id: "sweet-alert-demo" %>
       <%= link_to "Back", root_path, class: "btn btn-flat" %>
     </div>
   <% end %>

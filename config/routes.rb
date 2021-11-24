@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :lists, only: [:show, :index, :create, :new, :destroy] do
     resources :bookmarks, only: [:create, :new]
+    resources :reviews, only: [:create, :new]
   end
   resources :bookmarks, only: [:destroy]
+  resources :reviews, only: [:destroy]
 end

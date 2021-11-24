@@ -4,6 +4,10 @@
   grid-gap: 16px;
 }
 
+.cards:hover {
+  text-decoration: none;
+}
+
 .cards-movies {
   display: grid;
   grid-template-columns: 1fr 1fr;

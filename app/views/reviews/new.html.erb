@@ -1,0 +1,15 @@
+<div class="container mt-5">
+  <div class="form-header mb-5">
+  <h4>Add a review to your  <strong> <%= @list.name %> </strong>  collection</h4>
+  <%# <%= link_to "Back", lists_path, class: "btn btn-flat mt-5" %>
+  </div>
+  <%= simple_form_for [ @list, @review ] do |f| %>
+    <%= f.input :comment %>
+    <%= f.input :rating%>
+    <div class="form-action mt-4">
+      <%= f.button :submit, "Add review", class: "btn btn-create" %>
+
+      <%= link_to "Back", list_path(@list), class: "btn btn-flat" %>
+    </div>
+  <% end %>
+</div>

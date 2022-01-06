@@ -1,0 +1,159 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+-------------------
+
+
+.index-games-show{
+  width: 100%;
+  padding: 50px 0;
+}
+
+.parent-div-category-game-show{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 50px;
+  justify-content: space-evenly;
+
+  border-radius: 20px;
+}
+.parent-div-category-game-show a:hover{
+  text-decoration: none;
+}
+.div-category-game-show{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 300px;
+  height: 200px;
+  padding: 5px 20px;
+
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: var(--transition-time);
+}
+.div-category-game-show:hover{
+  transform: scale(1.1);
+}
+
+.content-of-the-div-category-game-show p{
+  color: $light;
+  font-family: monospace;
+  font-size: 10px;
+}
+.content-of-the-div-category-game-show h1{
+  color: $light;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.card-trip {
+  overflow: hidden;
+  background: $light;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 15px;
+}
+
+.card-trip:hover{
+  transform: scale(1.05);
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2:hover{
+  text-decoration: none;
+}
+
+.card-trip h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 60px;
+}
+
+
+
+.game-details li {
+  margin-right: 5px;
+}
+
+.game-details ul {
+  list-style-type: none;
+}

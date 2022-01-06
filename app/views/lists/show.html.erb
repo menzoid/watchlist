@@ -40,7 +40,7 @@
     <div class="notification">
       <img src='https://thumbs.dreamstime.com/b/popcorn-striped-basket-eps-vector-illustration-white-background-64124737.jpg' class="avatar-large"/>
       <div class="notification-content">
-        <p><small><%= review.rating %> stars</small> reviewed at <% review.created_at  %></p>
+        <p><small><%= review.rating %> stars</small> reviewed on <%= review.created_at.strftime("%eth %b")   %></p>
         <p><%= review.comment %></p>
       </div>
 

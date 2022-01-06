@@ -20,26 +20,26 @@ import { initSweetalert } from '../plugins/init_sweetalert';
 document.addEventListener("turbolinks:load", function () {
   initSelect2();
   loadDynamicBannerText();
-  initSweetalert('#sweet-alert-demo', {
-    title: "Are you sure?",
-    text: "This action cannot be reversed",
-    icon: "warning"
-  }, (value) => {
-    if (value) {
-      const link = document.querySelector('#delete-link');
-      link.click();
-    }
-  });
-  initSweetalert('#sweet-alert-pause', {
-    title: "Testing?",
-    text: "This action cannot be reversed",
-    icon: "warning"
-  }, (value) => {
-    if (value) {
-      const link = document.querySelector('#delete-link');
-      link.click();
-    }
-  });
+  // initSweetalert('#sweet-alert-demo', {
+  //   title: "Are you sure?",
+  //   text: "This action cannot be reversed",
+  //   icon: "warning"
+  // }, (value) => {
+  //   if (value) {
+  //     const link = document.querySelector('#delete-link');
+  //     link.click();
+  //   }
+  // });
+  // initSweetalert('#sweet-alert-pause', {
+  //   title: "Testing?",
+  //   text: "This action cannot be reversed",
+  //   icon: "warning"
+  // }, (value) => {
+  //   if (value) {
+  //     const link = document.querySelector('#delete-link');
+  //     link.click();
+  //   }
+  // });
 });
 
 
